@@ -1,0 +1,56 @@
+@use "variables" as *;
+
+@mixin flex($jc: center, $ai:center, $gap: 0) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
+
+@mixin bg-cover() {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+@mixin button-white() {
+    color: $white-col;
+    border: 1px solid $white-col;
+    background-color: transparent;
+    transition: 0.4s ease;
+    padding: 12px 30px;
+    appearance: button;
+    text-decoration: none;
+    &:hover {
+        background-color: $brown-col-2;
+    }
+}
+
+@mixin button-black() {
+    color: $black-col;
+    border: 1px solid $black-col;
+    background-color: transparent;
+    transition: 0.4s ease;
+    padding: 12px 30px;
+    appearance: button;
+    text-decoration: none;
+    &:hover {
+        border-color: $brown-col-2;
+        background-color: $brown-col-2;
+        color: $white-col;
+    }
+}
+
+@mixin input() {
+    background-color: transparent;
+    border: 1px solid white;
+    &:hover {
+        border-width: 2px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    &:focus {
+        outline: none;
+        border-width: 2px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+}

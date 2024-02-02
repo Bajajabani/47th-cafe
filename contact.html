@@ -61,6 +61,67 @@
         <p>I'm a paragraph. Click here to add your own text and edit me.</p>
         <p>Let your users get to know you.</p>
       </section>
+      <section class="contact-info">
+        <article>
+          <form
+            action="https://api.everrest.educata.dev/echo/html"
+            method="POST"
+          >
+            <span
+              ><div>
+                <label for="fname">First Name *</label>
+                <input type="text" name="fname" id="fname" required />
+              </div>
+              <div>
+                <label for="lname">Last Name *</label>
+                <input type="text" name="lname" id="lname" required /></div
+            ></span>
+            <div>
+              <label for="email">Email *</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="5"></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </article>
+        <article>
+          <div>
+            <span>
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Address</p>
+              <p>500 Terry Francine St.<br />San Francisco, CA 94158</p>
+            </span>
+            <span>
+              <i class="fa-solid fa-phone"></i>
+              <p>Phone</p>
+              <p>123-456-7890</p>
+            </span>
+            <span>
+              <i class="fa-regular fa-envelope"></i>
+              <p>Email</p>
+              <p><a href="mailto:info@mysite.com">info@mysite.com</a></p>
+            </span>
+            <span>
+              <i class="fa-regular fa-thumbs-up"></i>
+              <p>Follow</p>
+              <div>
+                <a href="https://www.facebook.com/"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://www.twitter.com/"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://www.instagram.com/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </span>
+          </div>
+        </article>
+      </section>
       <section class="map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5459.200112050979!2d-122.42286532109645!3d37.77478521250625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808581499a57f365%3A0x4a5a817eb0d81a60!2sSVN%20West!5e0!3m2!1sen!2sge!4v1706792896778!5m2!1sen!2sge"
@@ -96,7 +157,7 @@
         <div>
           <a href="https://www.instagram.com/">Instagram</a>
           <a href="https://www.facebook.com/">Facebook</a>
-          <a href="https://twitter.com/">Twitter</a>
+          <a href="https://www.twitter.com/">Twitter</a>
         </div>
       </section>
       <section class="credit">
